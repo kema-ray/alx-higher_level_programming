@@ -142,7 +142,6 @@ class Rectangle:
         """
         Method that prints a message when an instance is deleted
         """
-
         Rectangle.number_of_instances -= 1
         print("Bye rectangle...")
 
@@ -156,5 +155,4 @@ class Rectangle:
         Returns:
             a new instance of Rectangle class
         """
-
         return cls(size, size)    
