@@ -118,7 +118,7 @@ checking when wrong type is provided for last_name
 
 checking when None is passed
 ::
-        >>> say_my_name("Valentine", None)
+        >>> say_my_name("Rachel", None)
         Traceback (most recent call last):
         TypeError: last_name must be a string
         >>> say_my_name(None)
