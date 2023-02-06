@@ -1,7 +1,8 @@
 #!/usr/bin/python3
 """
-inherits_from function
+Module for inherits_from function
 """
+
 
 def inherits_from(obj, a_class):
     """
