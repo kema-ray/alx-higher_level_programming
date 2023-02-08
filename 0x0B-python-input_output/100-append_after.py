@@ -18,6 +18,7 @@ def append_after(filename="", search_string="", new_string=""):
             if search_string in read[index]:
                 read[index:index + 1] = [read[index],new_string]
                 index += 1
+            index += 1
 
     with open(filename, "w", encoding="utf-8") as files:
-        file.writelines(read)
+        files.writelines(read)
