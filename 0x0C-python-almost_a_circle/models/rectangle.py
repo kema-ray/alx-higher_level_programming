@@ -24,3 +24,63 @@ class Rectangle(Base):
         self.height = height
         self.x = x
         self.y = y
+
+    @property
+    def width(self):
+        """
+        getter method for width
+        """
+        return self.__width
+    
+    @width.setter
+    def width(self, value):
+        """
+        setter method for width
+        """
+        self.integer_validation('width', value)
+        self.__width = value
+
+    @property
+    def height(self):
+        """
+        getter method for height
+        """
+        return self.__height
+    
+    @height.setter
+    def height(self, value):
+        """
+        setter method for width
+        """
+        self.integer_validation('height', value)
+        self.__height = value
+
+    @property
+    def x(self):
+        """
+        getter method for x
+        """
+        return self.__x
+    
+    @x.setter
+    def x(self, value):
+        """
+        setter method for x
+        """
+        self.integer_validation1('x', value)
+        self.__x = value
+
+    @property
+    def y(self):
+        """
+        getter method for y
+        """
+        return self.__y
+    
+    @y.setter
+    def y(self, value):
+        """
+        setter method for y
+        """
+        self.integer_validation1('y', value)
+        self.__y = value
