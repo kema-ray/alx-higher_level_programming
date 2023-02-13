@@ -101,10 +101,24 @@ class Rectangle(Base):
         for row in range(self.height):
             print("{}{}".format(" " * self.x, "#" * self.width))
 
-        def __str__(self):
-            """
-            returns a string format of the rectangle
-            """
-            return "[{}] ({}) {}/{} - {}/{}".format(type(self).__name__,
+    def __str__(self):
+        """
+        returns a string format of the rectangle
+        """
+        return "[{}] ({}) {}/{} - {}/{}".format(type(self).__name__,
                                                 self.id, self.__x, self.__y,
                                                 self.__width, self.__height)
+       
+    def update(self, *args, **kwargs):
+        """
+        method that assigns an argument to each attribute
+        """
+        if args:
+            list = ['id', 'width', 'height', 'x', 'y']
+            i = 0
+            for arg in args:
+                setattr(self, list[i], arg)
+                i += 1
+        else:
+            for key, value in kwargs.items():
+                setattr(self, key, value)
