@@ -109,7 +109,7 @@ class Rectangle(Base):
                                                 self.id, self.__x, self.__y,
                                                 self.__width, self.__height)
        
-    def update(self, *args, **kwargs):
+    def update(self, *args):
         """
         method that assigns an argument to each attribute
         """
