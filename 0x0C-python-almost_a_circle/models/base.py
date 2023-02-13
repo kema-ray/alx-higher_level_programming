@@ -63,3 +63,15 @@ class Base:
             i = '[]'
         with open(cls.__name__ + '.json', 'w') as f:
             f.write(i)
+
+    def from_json_string(json_string):
+        """
+        json to string static method
+        args:
+            json_string: json object string type
+        return:
+            list of json strings
+        """
+        if json_string:
+            return json.loads(json_string)
+        return []
