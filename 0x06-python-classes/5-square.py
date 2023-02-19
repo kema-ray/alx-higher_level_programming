@@ -1,11 +1,12 @@
 #!/usr/bin/python3
 """Square Module"""
 
+
 class Square:
     """
     Declares a square class
     """
-    def __init__(self, size = 0):
+    def __init__(self, size=0):
         """
         Initializes class attributes
         Args:
@@ -34,7 +35,7 @@ class Square:
         Computes the area of a square
         """
         return self.__size ** 2
-    
+
     def my_print(self):
         """
         Prints the stdout of the square with the character #
