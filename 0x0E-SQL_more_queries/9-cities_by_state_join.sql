@@ -1,4 +1,3 @@
---script that lists all cities contained in the database-- Results are sorted in order of ascending cities.id
-
+-- A script that lists all the cities that can be found in the database
 SELECT cities.id, cities.name, states.name
-FROM cities JOIN states ON cities.state_id = states.id
+FROM cities JOIN states ON cities.state_id = states.id;
