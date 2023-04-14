@@ -1,5 +1,11 @@
 #!/usr/bin/node
 
-const message = ['C is fun', 'Python is cool', 'Javascript is amazing'];
+const message = [
+  'C is fun',
+  'Python is cool',
+  'JavaScript is amazing'
+];
 
-message.forEach((element) => console.log(element));
+for (let i = 0; i < message.length; i++) {
+  console.log(message[i]);
+}
